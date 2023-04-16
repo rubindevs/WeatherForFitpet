@@ -22,7 +22,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
-import dev.inforest.fitfet.ui.theme.WhetherTheme
+import dev.inforest.fitfet.ui.theme.WeatherTheme
 import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
 import java.util.*
@@ -41,19 +41,19 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            WhetherTheme {
+            WeatherTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    ListWhether(Modifier.fillMaxSize())
+                    ListWeather(Modifier.fillMaxSize())
                 }
             }
         }
     }
 
     @Composable
-    fun ListWhether(modifier: Modifier) {
+    fun ListWeather(modifier: Modifier) {
         val coroutineScope = rememberCoroutineScope()
         val listWeather = remember { mutableStateOf<List<WeatherApi>>(arrayListOf()) }
         LaunchedEffect("weather") {
