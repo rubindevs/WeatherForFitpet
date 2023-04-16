@@ -5,7 +5,7 @@
 - Network : Retrofit
 
 ## API
-- OpenWhether
+- OpenWeather
 
 ## 컴파일 환경
 - JDK 11
