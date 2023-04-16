@@ -1,4 +1,4 @@
-# WhetherForFitpet
+# WeatherForFitpet
 
 ## 구성
 - UI: AndroidCompose
